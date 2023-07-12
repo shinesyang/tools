@@ -1,0 +1,10 @@
+说明文件:
+   1. CmdAndChangeDirToFile 实时输出结果
+   2. CmdAtonceResult 直接执行返回结果
+
+
+CmdAndChangeDirToFile 捕捉了正常返回与错误返回,如果需要将一些输入的信息以错误的方式返回,
+那么需要将信息输出到Stderr管道,如:
+
+    1. go 中使用 log.error()
+    2. shell 中使用 >&2
